@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ContentViewModel()
+    
     var body: some View {
-        NavigationView  {
+        NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
-                
+                TopMoversView()
+                Divider()
+                AllTickersView(viewModel: viewModel)
             }.navigationTitle("Live Prices")
         }
     }
