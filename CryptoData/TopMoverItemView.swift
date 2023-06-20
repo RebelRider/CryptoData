@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TopMoverItemView: View {
+    let coin: Coin
+    
     var body: some View {
         
         HStack{
@@ -37,8 +39,8 @@ struct TopMoverItemView: View {
     }
 }
 
-struct TopMoverItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMoverItemView()
-    }
-}
+//struct TopMoverItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopMoverItemView()
+//    }
+//}

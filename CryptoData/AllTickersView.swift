@@ -22,7 +22,7 @@ struct AllTickersView: View {
             
             ScrollView{
                 VStack {
-                    ForEach(viewModel.coins){ coin in
+                    ForEach(viewModel.coins) { coin in
                         TickerRowView(coin: coin)
                     }
                 }

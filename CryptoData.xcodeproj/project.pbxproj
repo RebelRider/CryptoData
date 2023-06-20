@@ -65,12 +65,12 @@
 			children = (
 				489866252A3B92BD00944E78 /* CryptoDataApp.swift */,
 				489866272A3B92BD00944E78 /* ContentView.swift */,
-				480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */,
 				480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */,
+				480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */,
 				486171FE2A3CFB47000F6B50 /* TopMoversView.swift */,
 				486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */,
-				480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */,
 				48D1FF952A3F8B9E00056350 /* Coin.swift */,
+				480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */,
 				489866292A3B92BD00944E78 /* Assets.xcassets */,
 				4898662B2A3B92BD00944E78 /* Preview Content */,
 			);

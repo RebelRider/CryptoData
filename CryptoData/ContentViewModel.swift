@@ -8,7 +8,8 @@
 import SwiftUI
 
 class ContentViewModel: ObservableObject {
-    @Published var coins = [Coin]() 
+    @Published var coins = [Coin]()
+    @Published var topMovingCoins = [Coin]()
     
     init() {
         fetchCoinDate()
@@ -34,7 +35,11 @@ class ContentViewModel: ObservableObject {
             
             do {
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
-                self.coins = coins
+                DispatchQueue.main.async {
+                    self.coins = coins
+                    self.configureTopMovers()
+                }
+                
                 print("DEBUG: \(coins)")
             }
             catch let error  { //errors of decoding process
@@ -42,6 +47,11 @@ class ContentViewModel: ObservableObject {
             }
             
         }.resume()
+    }
+    
+    func configureTopMovers() {
+        let topMovers = coins.sorted(by: { $0.priceChangePercentage24H > $1.priceChangePercentage24H })
+        self.topMovingCoins = Array(topMovers.prefix(7))
     }
     
 }

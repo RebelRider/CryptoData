@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
-                TopMoversView()
+                TopMoversView(viewModel: viewModel)
                 Divider()
                 AllTickersView(viewModel: viewModel)
             }.navigationTitle("Live Prices")
