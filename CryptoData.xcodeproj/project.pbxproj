@@ -10,19 +10,33 @@
 		480C0A532A3E768C00FAA8C2 /* AllTickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */; };
 		480C0A552A3E769E00FAA8C2 /* TickerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */; };
 		480C0A572A3E869C00FAA8C2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */; };
+		483AAD862A4651D3001A3652 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AAD852A4651D3001A3652 /* DateExtension.swift */; };
+		485D9CCB2A43E3CC004B48D3 /* LowerDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */; };
+		485D9CCD2A43E510004B48D3 /* PreviewMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D9CCC2A43E510004B48D3 /* PreviewMockData.swift */; };
 		486171FD2A3CFB23000F6B50 /* TopMoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */; };
 		486171FF2A3CFB47000F6B50 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486171FE2A3CFB47000F6B50 /* TopMoversView.swift */; };
 		489866262A3B92BD00944E78 /* CryptoDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489866252A3B92BD00944E78 /* CryptoDataApp.swift */; };
 		489866282A3B92BD00944E78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489866272A3B92BD00944E78 /* ContentView.swift */; };
 		4898662A2A3B92BD00944E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489866292A3B92BD00944E78 /* Assets.xcassets */; };
 		4898662D2A3B92BD00944E78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4898662C2A3B92BD00944E78 /* Preview Assets.xcassets */; };
+		48A5677F2A46346600EF1A67 /* ChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A5677E2A46346600EF1A67 /* ChartDataModel.swift */; };
+		48B1B0DA2A42A55F0031CE39 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 48B1B0D92A42A55F0031CE39 /* Kingfisher */; };
+		48B1B0DC2A42A6DE0031CE39 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1B0DB2A42A6DE0031CE39 /* DoubleExt.swift */; };
+		48C881AB2A44C440000FBBD4 /* TickerDetailsSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C881AA2A44C440000FBBD4 /* TickerDetailsSectionModel.swift */; };
+		48C881AD2A44CF77000FBBD4 /* TickerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C881AC2A44CF77000FBBD4 /* TickerDetailsViewModel.swift */; };
 		48D1FF962A3F8B9E00056350 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1FF952A3F8B9E00056350 /* Coin.swift */; };
+		48D2EB732A43929A00E6F604 /* TickerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2EB722A43929A00E6F604 /* TickerDetailsView.swift */; };
+		48D2EB752A439FEB00E6F604 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2EB742A439FEB00E6F604 /* Color.swift */; };
+		48D2EB772A43A2E200E6F604 /* TickerLowerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2EB762A43A2E200E6F604 /* TickerLowerDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTickersView.swift; sourceTree = "<group>"; };
 		480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRowView.swift; sourceTree = "<group>"; };
 		480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		483AAD852A4651D3001A3652 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerDetailsModel.swift; sourceTree = "<group>"; };
+		485D9CCC2A43E510004B48D3 /* PreviewMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMockData.swift; sourceTree = "<group>"; };
 		486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoverItemView.swift; sourceTree = "<group>"; };
 		486171FE2A3CFB47000F6B50 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
 		489866222A3B92BD00944E78 /* CryptoData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +44,14 @@
 		489866272A3B92BD00944E78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		489866292A3B92BD00944E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4898662C2A3B92BD00944E78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48A5677E2A46346600EF1A67 /* ChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataModel.swift; sourceTree = "<group>"; };
+		48B1B0DB2A42A6DE0031CE39 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
+		48C881AA2A44C440000FBBD4 /* TickerDetailsSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDetailsSectionModel.swift; sourceTree = "<group>"; };
+		48C881AC2A44CF77000FBBD4 /* TickerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDetailsViewModel.swift; sourceTree = "<group>"; };
 		48D1FF952A3F8B9E00056350 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		48D2EB722A43929A00E6F604 /* TickerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDetailsView.swift; sourceTree = "<group>"; };
+		48D2EB742A439FEB00E6F604 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		48D2EB762A43A2E200E6F604 /* TickerLowerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerLowerDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B1B0DA2A42A55F0031CE39 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +93,11 @@
 				486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */,
 				48D1FF952A3F8B9E00056350 /* Coin.swift */,
 				480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */,
+				48B1B0DB2A42A6DE0031CE39 /* DoubleExt.swift */,
+				48D2EB712A43925400E6F604 /* TickerDetails */,
 				489866292A3B92BD00944E78 /* Assets.xcassets */,
 				4898662B2A3B92BD00944E78 /* Preview Content */,
+				485D9CCC2A43E510004B48D3 /* PreviewMockData.swift */,
 			);
 			path = CryptoData;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 				4898662C2A3B92BD00944E78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48A5677D2A46344600EF1A67 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				48A5677E2A46346600EF1A67 /* ChartDataModel.swift */,
+				483AAD852A4651D3001A3652 /* DateExtension.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		48D2EB712A43925400E6F604 /* TickerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				48A5677D2A46344600EF1A67 /* Chart */,
+				48D2EB722A43929A00E6F604 /* TickerDetailsView.swift */,
+				48C881AC2A44CF77000FBBD4 /* TickerDetailsViewModel.swift */,
+				48D2EB762A43A2E200E6F604 /* TickerLowerDetailsView.swift */,
+				485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */,
+				48C881AA2A44C440000FBBD4 /* TickerDetailsSectionModel.swift */,
+				48D2EB742A439FEB00E6F604 /* Color.swift */,
+			);
+			path = TickerDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +149,9 @@
 			dependencies = (
 			);
 			name = CryptoData;
+			packageProductDependencies = (
+				48B1B0D92A42A55F0031CE39 /* Kingfisher */,
+			);
 			productName = CryptoData;
 			productReference = 489866222A3B92BD00944E78 /* CryptoData.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 489866192A3B92BD00944E78;
+			packageReferences = (
+				48B1B0D82A42A55F0031CE39 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 489866232A3B92BD00944E78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,12 +210,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				486171FF2A3CFB47000F6B50 /* TopMoversView.swift in Sources */,
+				48C881AB2A44C440000FBBD4 /* TickerDetailsSectionModel.swift in Sources */,
+				48A5677F2A46346600EF1A67 /* ChartDataModel.swift in Sources */,
 				480C0A552A3E769E00FAA8C2 /* TickerRowView.swift in Sources */,
+				48D2EB752A439FEB00E6F604 /* Color.swift in Sources */,
 				489866282A3B92BD00944E78 /* ContentView.swift in Sources */,
 				480C0A572A3E869C00FAA8C2 /* ContentViewModel.swift in Sources */,
 				480C0A532A3E768C00FAA8C2 /* AllTickersView.swift in Sources */,
+				48D2EB732A43929A00E6F604 /* TickerDetailsView.swift in Sources */,
+				48D2EB772A43A2E200E6F604 /* TickerLowerDetailsView.swift in Sources */,
 				489866262A3B92BD00944E78 /* CryptoDataApp.swift in Sources */,
 				48D1FF962A3F8B9E00056350 /* Coin.swift in Sources */,
+				48C881AD2A44CF77000FBBD4 /* TickerDetailsViewModel.swift in Sources */,
+				483AAD862A4651D3001A3652 /* DateExtension.swift in Sources */,
+				485D9CCD2A43E510004B48D3 /* PreviewMockData.swift in Sources */,
+				485D9CCB2A43E3CC004B48D3 /* LowerDetailsModel.swift in Sources */,
+				48B1B0DC2A42A6DE0031CE39 /* DoubleExt.swift in Sources */,
 				486171FD2A3CFB23000F6B50 /* TopMoverItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48B1B0D82A42A55F0031CE39 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48B1B0D92A42A55F0031CE39 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48B1B0D82A42A55F0031CE39 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4898661A2A3B92BD00944E78 /* Project object */;
 }

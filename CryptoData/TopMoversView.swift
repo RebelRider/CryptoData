@@ -15,13 +15,18 @@ struct TopMoversView: View {
             Text("Top movers").font(.headline)
             
             ScrollView(.horizontal, showsIndicators: false){
-                HStack{
-                    ForEach(viewModel.coins) { coin in
-                        TopMoverItemView(coin: coin)
+                HStack(alignment: .bottom) {
+                    ForEach(viewModel.topMovingCoins) { coin in
+                        NavigationLink {
+                            TickerDetailsView(coin: coin)
+                        } label: {
+                            TopMoverItemView(coin: coin)
+                        }
+
                     }
                 }
             }
-        }.padding(4)
+        }.padding(8)
     }
 }
 

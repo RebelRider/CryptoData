@@ -24,7 +24,7 @@ struct Coin: Codable, Identifiable {
     let atl, atlChangePercentage: Double?
     let atlDate: String?
     let lastUpdated: String?
-    let sparklineIn7D: SparklineIn7D?
+    let sparklineIn7D: SparklineIn7D? // [] of prices every hour
     let priceChangePercentage24HInCurrency: Double?
 
     enum CodingKeys: String, CodingKey {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TopMoverItemView: View {
     let coin: Coin
@@ -13,28 +14,31 @@ struct TopMoverItemView: View {
     var body: some View {
         
         HStack{
-            VStack(alignment: .leading){
-                Image(systemName: "bitcoinsign.circle.fill")
+            VStack(alignment: .center){
+                KFImage(URL(string: coin.image))
                     .resizable()
                     .frame(width: 36, height: 36)
                     .foregroundColor(.orange)
-                Text("BTC")
+                Text(coin.symbol.uppercased())
                     .font(.body)
                     .fontWeight(.bold)
+                    .foregroundColor(Color.theme.primaryTextColor)
             }
-            VStack(alignment: .trailing){
-                Text("$24.559")
+            VStack(alignment: .center){
+                Text(coin.currentPrice.toCurrency())
                     .font(.title3)
-                    .fontWeight(.heavy)
-                Text("+" + "11.3%")
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.theme.primaryTextColor)
+                Text(coin.priceChange24H.toReadablePercent())
                     .font(.title2)
-                    .foregroundColor(.green)
+                    .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
                     .fontWeight(.bold)
             }
         }
-        .padding(11.0)
-        .frame(width: 152, height: 111)
-        .overlay(RoundedRectangle(cornerRadius: 10.1).stroke(Color(.systemGray4),lineWidth: 1.5))
+        .padding(2)
+        .frame(width: 155, height: 88)
+        //.background(Color("TopMoversBackground"))
+        .overlay(RoundedRectangle(cornerRadius: 14.1).stroke(Color(.systemGray4),lineWidth: 1.5))
         
     }
 }

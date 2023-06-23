@@ -23,7 +23,12 @@ struct AllTickersView: View {
             ScrollView{
                 VStack {
                     ForEach(viewModel.coins) { coin in
-                        TickerRowView(coin: coin)
+                        NavigationLink {
+                            TickerDetailsView(coin: coin)
+                        } label: {
+                            TickerRowView(coin: coin)
+                        }
+
                     }
                 }
             }
