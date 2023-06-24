@@ -9,7 +9,15 @@ import SwiftUI
 
 class TickerDetailsViewModel {
     private let coin: Coin
+    
     var chartData = [ChartDataModel]() //initializing now, bcs we can just create a blank array and then populate it
+    var xAxis = [Date]()
+    var yAxis = [Double]()
+    var startDate = Date()
+    var endDate = Date()
+    var minPrice = 0.0
+    var maxPrice = 0.0
+    
     
     var overviewSectionModel: TickerDetailsSectionModel {
         //price
@@ -54,11 +62,19 @@ class TickerDetailsViewModel {
         guard let priceData = coin.sparklineIn7D?.price else { return } //price as array of Double
         
         var index = 0
+        self.minPrice = priceData.min()!
+        self.maxPrice = priceData.max()!
+        self.endDate = Date(coinUglyString: coin.lastUpdated ?? "")
+        self.startDate = endDate.addingTimeInterval(-7 * 60 * 60 * 24)
+        self.xAxis = [startDate, endDate]
+        self.yAxis = [minPrice, (minPrice + maxPrice) / 2 ,maxPrice]
+        
         for price in priceData.reversed() {
-            let lastUpdatedDate = Date(coinUglyString: coin.lastUpdated ?? "")
-            let date = lastUpdatedDate.addingTimeInterval(-1 * 60 * 60 * Double(index))
             
-            let data = ChartDataModel(date: date, value: price)
+            let date = endDate.addingTimeInterval(-1 * 60 * 60 * Double(index))
+            
+            let chartDataElement = ChartDataModel(date: date, value: price)
+            self.chartData.append(chartDataElement)
             index += 1
         }
     }

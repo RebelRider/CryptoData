@@ -18,7 +18,8 @@ struct TickerDetailsView: View {
         NavigationView {
             ScrollView {
                 //chart
-                
+                ChartView(viewModel: viewModel)
+                    .frame(height: 266)//.background(Color(.systemGray))
                 
                 //overview
                 TickerLowerDetailsView(model: viewModel.overviewSectionModel).padding(.vertical)
@@ -26,8 +27,9 @@ struct TickerDetailsView: View {
                 //additional details
                 TickerLowerDetailsView(model: viewModel.additionalDetailsSectionModel)
             }.padding()
-            .navigationTitle("Bitcoin")
+                .navigationTitle(" ")
         }
+        Spacer()
     }
 }
 

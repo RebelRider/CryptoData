@@ -11,6 +11,7 @@
 		480C0A552A3E769E00FAA8C2 /* TickerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */; };
 		480C0A572A3E869C00FAA8C2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */; };
 		483AAD862A4651D3001A3652 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AAD852A4651D3001A3652 /* DateExtension.swift */; };
+		483AAD882A466A7A001A3652 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AAD872A466A7A001A3652 /* ChartView.swift */; };
 		485D9CCB2A43E3CC004B48D3 /* LowerDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */; };
 		485D9CCD2A43E510004B48D3 /* PreviewMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D9CCC2A43E510004B48D3 /* PreviewMockData.swift */; };
 		486171FD2A3CFB23000F6B50 /* TopMoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */; };
@@ -35,6 +36,7 @@
 		480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRowView.swift; sourceTree = "<group>"; };
 		480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		483AAD852A4651D3001A3652 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		483AAD872A466A7A001A3652 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerDetailsModel.swift; sourceTree = "<group>"; };
 		485D9CCC2A43E510004B48D3 /* PreviewMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMockData.swift; sourceTree = "<group>"; };
 		486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoverItemView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		48A5677D2A46344600EF1A67 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				483AAD872A466A7A001A3652 /* ChartView.swift */,
 				48A5677E2A46346600EF1A67 /* ChartDataModel.swift */,
 				483AAD852A4651D3001A3652 /* DateExtension.swift */,
 			);
@@ -219,6 +222,7 @@
 				480C0A532A3E768C00FAA8C2 /* AllTickersView.swift in Sources */,
 				48D2EB732A43929A00E6F604 /* TickerDetailsView.swift in Sources */,
 				48D2EB772A43A2E200E6F604 /* TickerLowerDetailsView.swift in Sources */,
+				483AAD882A466A7A001A3652 /* ChartView.swift in Sources */,
 				489866262A3B92BD00944E78 /* CryptoDataApp.swift in Sources */,
 				48D1FF962A3F8B9E00056350 /* Coin.swift in Sources */,
 				48C881AD2A44CF77000FBBD4 /* TickerDetailsViewModel.swift in Sources */,
