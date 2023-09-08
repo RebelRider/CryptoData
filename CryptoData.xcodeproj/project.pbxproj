@@ -29,6 +29,8 @@
 		48D2EB732A43929A00E6F604 /* TickerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2EB722A43929A00E6F604 /* TickerDetailsView.swift */; };
 		48D2EB752A439FEB00E6F604 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2EB742A439FEB00E6F604 /* Color.swift */; };
 		48D2EB772A43A2E200E6F604 /* TickerLowerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D2EB762A43A2E200E6F604 /* TickerLowerDetailsView.swift */; };
+		48E689C92A489B0400F2C175 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E689C82A489B0400F2C175 /* LoadingIndicator.swift */; };
+		48E689CB2A48A6AF00F2C175 /* LazyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E689CA2A48A6AF00F2C175 /* LazyNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		48D2EB722A43929A00E6F604 /* TickerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDetailsView.swift; sourceTree = "<group>"; };
 		48D2EB742A439FEB00E6F604 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		48D2EB762A43A2E200E6F604 /* TickerLowerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerLowerDetailsView.swift; sourceTree = "<group>"; };
+		48E689C82A489B0400F2C175 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		48E689CA2A48A6AF00F2C175 /* LazyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4800EB9C2AA9D7700052C3DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				489866272A3B92BD00944E78 /* ContentView.swift */,
+				480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */,
+				480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */,
+				486171FE2A3CFB47000F6B50 /* TopMoversView.swift */,
+				486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */,
+				48E689CA2A48A6AF00F2C175 /* LazyNavigationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4800EBA02AA9EFF10052C3DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		489866192A3B92BD00944E78 = {
 			isa = PBXGroup;
 			children = (
@@ -88,14 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				489866252A3B92BD00944E78 /* CryptoDataApp.swift */,
-				489866272A3B92BD00944E78 /* ContentView.swift */,
-				480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */,
-				480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */,
-				486171FE2A3CFB47000F6B50 /* TopMoversView.swift */,
-				486171FC2A3CFB23000F6B50 /* TopMoverItemView.swift */,
+				4800EBA02AA9EFF10052C3DA /* ViewModel */,
+				4800EB9C2AA9D7700052C3DA /* Views */,
 				48D1FF952A3F8B9E00056350 /* Coin.swift */,
-				480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */,
 				48B1B0DB2A42A6DE0031CE39 /* DoubleExt.swift */,
+				48E689C82A489B0400F2C175 /* LoadingIndicator.swift */,
 				48D2EB712A43925400E6F604 /* TickerDetails */,
 				489866292A3B92BD00944E78 /* Assets.xcassets */,
 				4898662B2A3B92BD00944E78 /* Preview Content */,
@@ -217,6 +239,7 @@
 				48A5677F2A46346600EF1A67 /* ChartDataModel.swift in Sources */,
 				480C0A552A3E769E00FAA8C2 /* TickerRowView.swift in Sources */,
 				48D2EB752A439FEB00E6F604 /* Color.swift in Sources */,
+				48E689CB2A48A6AF00F2C175 /* LazyNavigationView.swift in Sources */,
 				489866282A3B92BD00944E78 /* ContentView.swift in Sources */,
 				480C0A572A3E869C00FAA8C2 /* ContentViewModel.swift in Sources */,
 				480C0A532A3E768C00FAA8C2 /* AllTickersView.swift in Sources */,
@@ -224,6 +247,7 @@
 				48D2EB772A43A2E200E6F604 /* TickerLowerDetailsView.swift in Sources */,
 				483AAD882A466A7A001A3652 /* ChartView.swift in Sources */,
 				489866262A3B92BD00944E78 /* CryptoDataApp.swift in Sources */,
+				48E689C92A489B0400F2C175 /* LoadingIndicator.swift in Sources */,
 				48D1FF962A3F8B9E00056350 /* Coin.swift in Sources */,
 				48C881AD2A44CF77000FBBD4 /* TickerDetailsViewModel.swift in Sources */,
 				483AAD862A4651D3001A3652 /* DateExtension.swift in Sources */,

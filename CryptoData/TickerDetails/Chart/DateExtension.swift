@@ -16,4 +16,13 @@ extension Date {
         let date = formatter.date(from: coinUglyString) ?? Date()
         self.init(timeInterval: 0, since: date)
     }
+    
+    private var shortDate: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM"
+        return formatter
+    }
+    func asShortDateString() -> String {
+        return shortDate.string(from: self)
+    }
 }

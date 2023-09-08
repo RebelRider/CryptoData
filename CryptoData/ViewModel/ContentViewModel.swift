@@ -8,6 +8,8 @@
 import SwiftUI
 
 class ContentViewModel: ObservableObject {
+    @Published var isLoadingData = true
+    
     @Published var coins = [Coin]()
     @Published var topMovingCoins = [Coin]()
     
@@ -38,12 +40,14 @@ class ContentViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.coins = coins
                     self.configureTopMovers()
+                    self.isLoadingData = false
                 }
                 
-                print("DEBUG: \(coins)")
+                //print("DEBUG: \(coins)")
             }
             catch let error  { //errors of decoding process
                 print("DEBUG: error \(error)")
+                self.isLoadingData = false
             }
             
         }.resume()

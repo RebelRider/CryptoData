@@ -33,6 +33,10 @@ extension Double {
         return formatter
     }
     
+    func asNumberString() -> String {
+        return String(format: "%.2f", self)
+    }
+    
     func toCurrency() -> String {
         if self > 0.01 { //solve problem with really small price?
             return currencyFormatter.string(for: self) ?? "0.00" }
@@ -42,5 +46,32 @@ extension Double {
     
     func toReadablePercent() -> String {
         return (numFormatter.string(for: self) ?? " ") + " %"
+    }
+    
+    //convert 123456 to 123.45K
+    func formattedWithK () -> String {
+        let num = abs(Double(self))
+        let signNegative = (self < 0) ? "-" : ""
+        switch num {
+        case 1_000_000_000_000...:
+            let formatted = num / 1_000_000_000_000
+            let stringFormatted = formatted.asNumberString()
+            return "\(signNegative)\(stringFormatted) Tr"
+        case 1_000_000_000...:
+            let formatted = num / 1_000_000_000
+            let stringFormatted = formatted.asNumberString()
+            return "\(signNegative)\(stringFormatted) Bn"
+        case 1_000_000...:
+            let formatted = num / 1_000_000
+            let stringFormatted = formatted.asNumberString()
+            return "\(signNegative)\(stringFormatted) M"
+        case 1_000...:
+            let formatted = num / 1_000
+            let stringFormatted = formatted.asNumberString()
+            return "\(signNegative)\(stringFormatted) K"
+        default:
+            return "\(signNegative)\(self.toCurrency())"
+        }
+        
     }
 }

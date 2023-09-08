@@ -24,7 +24,7 @@ struct AllTickersView: View {
                 VStack {
                     ForEach(viewModel.coins) { coin in
                         NavigationLink {
-                            TickerDetailsView(coin: coin)
+                            LazyNavView(TickerDetailsView(coin: coin))
                         } label: {
                             TickerRowView(coin: coin)
                         }

@@ -15,11 +15,12 @@ struct TickerDetailsView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ScrollView {
+        //NavigationView {
+            ScrollView(showsIndicators: true) {
                 //chart
                 ChartView(viewModel: viewModel)
-                    .frame(height: 266)//.background(Color(.systemGray))
+                    .padding(3)
+                    .frame(height: 288)//.background(Color(.systemGray))
                 
                 //overview
                 TickerLowerDetailsView(model: viewModel.overviewSectionModel).padding(.vertical)
@@ -27,8 +28,8 @@ struct TickerDetailsView: View {
                 //additional details
                 TickerLowerDetailsView(model: viewModel.additionalDetailsSectionModel)
             }.padding()
-                .navigationTitle(" ")
-        }
+                .navigationTitle(viewModel.tickerName)
+        
         Spacer()
     }
 }
