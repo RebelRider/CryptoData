@@ -22,6 +22,7 @@ struct ContentView: View {
                     LoadingIndicator()
                 }
             }.navigationTitle("Live Prices")
+                .buttonStyle(PlainButtonStyle())
         }
     }
 }

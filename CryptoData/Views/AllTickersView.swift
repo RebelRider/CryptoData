@@ -37,8 +37,8 @@ struct AllTickersView: View {
     }
 }
 
-//struct AllTickersView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AllTickersView()
-//    }
-//}
+struct AllTickersView_Previews: PreviewProvider {
+    static var previews: some View {
+        AllTickersView(viewModel: ContentViewModel())
+    }
+}
