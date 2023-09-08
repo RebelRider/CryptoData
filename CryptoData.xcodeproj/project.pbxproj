@@ -118,9 +118,9 @@
 			children = (
 				489866252A3B92BD00944E78 /* CryptoDataApp.swift */,
 				48D1FF952A3F8B9E00056350 /* Coin.swift */,
-				485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */,
 				48A5677E2A46346600EF1A67 /* ChartDataModel.swift */,
 				48C881AA2A44C440000FBBD4 /* TickerDetailsSectionModel.swift */,
+				485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */,
 				4800EBA02AA9EFF10052C3DA /* ViewModel */,
 				4800EB9C2AA9D7700052C3DA /* Views */,
 				489866292A3B92BD00944E78 /* Assets.xcassets */,
