@@ -19,7 +19,7 @@ struct TickerLowerDetailsView: View {
         VStack {
             Text(model.title).font(.title2).bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Divider()
+//            Divider()
             
             LazyVGrid(columns: columns, alignment: .leading, spacing: 19) {
                 ForEach(model.stats) { stat in
@@ -36,14 +36,14 @@ struct ThreeRowsView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(model.title).font(.caption).bold()
+            Text(model.title).font(.caption).fontWeight(.thin)
             Text(model.value).font(.title2)
             if model.percentageChange != nil {
                 HStack {
-                    Image(systemName: "triangle.fill")
-                    Text(model.percentageChange?.toReadablePercent() ?? " " + " (24h)")
+                    Image(systemName: model.percentageChange ?? 1 > 0 ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
+                    Text(model.percentageChange?.toReadablePercent() ?? " ")
                         .font(.headline)
-                }.font(.caption).foregroundColor(Color(.green))
+                }.font(.caption).foregroundColor(Color(model.percentageChange ?? 1 > 0 ? .green : . red)).shadow(color:.black, radius: 1, x: 1, y: 1)
             }
         }
     }

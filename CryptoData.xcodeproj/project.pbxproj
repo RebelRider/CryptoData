@@ -10,6 +10,7 @@
 		480C0A532A3E768C00FAA8C2 /* AllTickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */; };
 		480C0A552A3E769E00FAA8C2 /* TickerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */; };
 		480C0A572A3E869C00FAA8C2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */; };
+		48113DAF2ACF0DA6003AFD3F /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48113DAE2ACF0DA6003AFD3F /* DismissKeyboard.swift */; };
 		483AAD862A4651D3001A3652 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AAD852A4651D3001A3652 /* DateExtension.swift */; };
 		483AAD882A466A7A001A3652 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483AAD872A466A7A001A3652 /* ChartView.swift */; };
 		485D9CCB2A43E3CC004B48D3 /* LowerDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */; };
@@ -37,6 +38,7 @@
 		480C0A522A3E768C00FAA8C2 /* AllTickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTickersView.swift; sourceTree = "<group>"; };
 		480C0A542A3E769E00FAA8C2 /* TickerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRowView.swift; sourceTree = "<group>"; };
 		480C0A562A3E869C00FAA8C2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		48113DAE2ACF0DA6003AFD3F /* DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
 		483AAD852A4651D3001A3652 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		483AAD872A466A7A001A3652 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		485D9CCA2A43E3CC004B48D3 /* LowerDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerDetailsModel.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				4800EB9C2AA9D7700052C3DA /* Views */,
 				489866292A3B92BD00944E78 /* Assets.xcassets */,
 				48B1B0DB2A42A6DE0031CE39 /* DoubleExt.swift */,
+				48113DAE2ACF0DA6003AFD3F /* DismissKeyboard.swift */,
 				48E689CA2A48A6AF00F2C175 /* LazyNavigationView.swift */,
 				483AAD852A4651D3001A3652 /* DateExtension.swift */,
 				48D2EB742A439FEB00E6F604 /* Color.swift */,
@@ -173,7 +176,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					489866212A3B92BD00944E78 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -235,6 +238,7 @@
 				48D1FF962A3F8B9E00056350 /* Coin.swift in Sources */,
 				48C881AD2A44CF77000FBBD4 /* TickerDetailsViewModel.swift in Sources */,
 				483AAD862A4651D3001A3652 /* DateExtension.swift in Sources */,
+				48113DAF2ACF0DA6003AFD3F /* DismissKeyboard.swift in Sources */,
 				485D9CCD2A43E510004B48D3 /* PreviewMockData.swift in Sources */,
 				485D9CCB2A43E3CC004B48D3 /* LowerDetailsModel.swift in Sources */,
 				48B1B0DC2A42A6DE0031CE39 /* DoubleExt.swift in Sources */,
@@ -249,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -281,6 +286,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -309,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -341,6 +348,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -375,6 +383,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +413,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,20 +10,29 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
     
+//    let timeR = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    TopMoversView(viewModel: viewModel)
-                    Divider()
-                    AllTickersView(viewModel: viewModel)
-                }
                 if viewModel.isLoadingData {
                     LoadingIndicator()
+                } else {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        TopMoversView(viewModel: viewModel)
+                        Divider()
+                        AllTickersView(viewModel: viewModel)
+                    }
                 }
-            }.navigationTitle("Live Prices")
-                .buttonStyle(PlainButtonStyle())
+            }
+            .navigationTitle("Crypto Data")
+            .buttonStyle(.plain)
+            .dismissKeyboardOnTap()
         }
+//        .onReceive(timeR, perform: { _ in
+//            viewModel.fetchCoinsData()
+//            print("timer tick")
+//        })
     }
 }
 

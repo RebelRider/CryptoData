@@ -18,7 +18,7 @@ class ContentViewModel: ObservableObject {
     }
     
     func fetchCoinsData() {
-        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=131&page=1&sparkline=true&price_change_percentage=24h&locale=en&precision=full"
+        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=122&page=1&sparkline=true&price_change_percentage=24h&locale=en&precision=full"
         
         guard let url = URL(string: urlString) else { return }
         

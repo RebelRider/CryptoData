@@ -45,7 +45,7 @@ extension Double {
     }
     
     func toReadablePercent() -> String {
-        return (numFormatter.string(for: self) ?? " ") + " %"
+        return (numFormatter.string(for: self) ?? " ") + " %"// + " (24h)"
     }
     
     //convert 123456 to 123.45K

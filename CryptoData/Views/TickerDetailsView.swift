@@ -20,12 +20,13 @@ struct TickerDetailsView: View {
                 //chart
                 ChartView(viewModel: viewModel)
                     .padding(3)
-                    .frame(height: 266)//.background(Color(.systemGray))
+                    .frame(maxHeight: 355)//.background(Color(.systemGray))
                 
+                //24h change
+                TickerLowerDetailsView(model: viewModel.additionalDetailsSectionModel)
                 //overview
                 TickerLowerDetailsView(model: viewModel.overviewSectionModel).padding(.top)
-                //additional details
-                TickerLowerDetailsView(model: viewModel.additionalDetailsSectionModel)
+                
             }.padding()
                 .navigationTitle(viewModel.tickerName)
         

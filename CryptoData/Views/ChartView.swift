@@ -21,7 +21,7 @@ struct ChartView: View {
                 .shadow(color: viewModel.chartLineColor, radius: 3)
             }
         }
-        .frame(maxHeight: 337)
+        .frame(height: 277)
         .chartXScale(domain: ClosedRange(uncheckedBounds: (
             lower: viewModel.startDate,
             upper: viewModel.endDate)))
@@ -40,7 +40,7 @@ struct ChartView: View {
             upper: (viewModel.maxPrice + viewModel.maxPrice / 222)
         )))
         .chartYAxis {
-            AxisMarks(position: .leading, values: viewModel.yAxis) { value in // just delete     { value in
+            AxisMarks(position: .automatic, values: viewModel.yAxis) { value in // just delete     { value in
                 AxisValueLabel() {
                     if let doubleValue = value.as(Double.self) {
                         Text(doubleValue.formattedWithK())

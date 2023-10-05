@@ -19,7 +19,8 @@ struct TopMoverItemView: View {
                     .resizable()
                     .frame(width: 36, height: 36)
                     .foregroundColor(.orange)
-                Text(coin.symbol.uppercased())
+                    .shadow(radius: 2)
+                Text(coin.symbol.uppercased()).shadow(radius: 1)
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(Color.theme.primaryTextColor)
@@ -33,6 +34,7 @@ struct TopMoverItemView: View {
                     .font(.title2)
                     .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
                     .fontWeight(.bold)
+                    .shadow(color:.black, radius: 1, x: 1, y: 1)
             }.padding(.trailing, 9)
         }
         .padding(2)
