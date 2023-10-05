@@ -20,11 +20,10 @@ struct TickerDetailsView: View {
                 //chart
                 ChartView(viewModel: viewModel)
                     .padding(3)
-                    .frame(height: 288)//.background(Color(.systemGray))
+                    .frame(height: 266)//.background(Color(.systemGray))
                 
                 //overview
-                TickerLowerDetailsView(model: viewModel.overviewSectionModel).padding(.vertical)
-                
+                TickerLowerDetailsView(model: viewModel.overviewSectionModel).padding(.top)
                 //additional details
                 TickerLowerDetailsView(model: viewModel.additionalDetailsSectionModel)
             }.padding()

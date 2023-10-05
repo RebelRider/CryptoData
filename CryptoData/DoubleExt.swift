@@ -12,23 +12,23 @@ extension Double {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 3
+        formatter.minimumFractionDigits = 1
+        formatter.maximumFractionDigits = 2
         return formatter
     }
     private var currencyFormatterSmall: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
-        formatter.minimumFractionDigits = 4
-        formatter.maximumFractionDigits = 5
+        formatter.minimumFractionDigits = 3
+        formatter.maximumFractionDigits = 4
         return formatter
     }
     
     private var numFormatter: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
-        formatter.minimumFractionDigits = 2
+        formatter.minimumFractionDigits = 1
         formatter.maximumFractionDigits = 2
         return formatter
     }
@@ -39,9 +39,9 @@ extension Double {
     
     func toCurrency() -> String {
         if self > 0.01 { //solve problem with really small price?
-            return currencyFormatter.string(for: self) ?? "0.00" }
+            return currencyFormatter.string(for: self) ?? " " }
         else {
-            return currencyFormatterSmall.string(for: self) ?? "0.00" }
+            return currencyFormatterSmall.string(for: self) ?? " " }
     }
     
     func toReadablePercent() -> String {

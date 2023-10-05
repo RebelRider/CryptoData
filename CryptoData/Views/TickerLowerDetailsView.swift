@@ -17,8 +17,9 @@ struct TickerLowerDetailsView: View {
     
     var body: some View {
         VStack {
-            Text(model.title).font(.title).bold()
+            Text(model.title).font(.title2).bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
+            Divider()
             
             LazyVGrid(columns: columns, alignment: .leading, spacing: 19) {
                 ForEach(model.stats) { stat in
@@ -29,26 +30,24 @@ struct TickerLowerDetailsView: View {
     }
 }
 
-
-//MARK:- THREE ROWS VIEW - REUSABLE
+//MARK: - THREE ROWS VIEW - REUSABLE
 struct ThreeRowsView: View {
     let model: LowerDetailsModel
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(model.title).font(.caption)
-            Text(model.value).font(.callout)
+            Text(model.title).font(.caption).bold()
+            Text(model.value).font(.title2)
             if model.percentageChange != nil {
                 HStack {
                     Image(systemName: "triangle.fill")
-                    Text(model.percentageChange?.toReadablePercent() ?? " ")
+                    Text(model.percentageChange?.toReadablePercent() ?? " " + " (24h)")
                         .font(.headline)
                 }.font(.caption).foregroundColor(Color(.green))
             }
         }
     }
 }
-
 
 
 struct ThreeRowsView_Previews: PreviewProvider {

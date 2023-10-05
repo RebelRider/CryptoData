@@ -12,7 +12,6 @@ struct ChartView: View {
     let viewModel: TickerDetailsViewModel
     
     var body: some View {
-        
         Chart {
             ForEach (viewModel.chartData) { item in
                 LineMark(x: .value("Date", item.date),
@@ -22,6 +21,7 @@ struct ChartView: View {
                 .shadow(color: viewModel.chartLineColor, radius: 3)
             }
         }
+        .frame(maxHeight: 337)
         .chartXScale(domain: ClosedRange(uncheckedBounds: (
             lower: viewModel.startDate,
             upper: viewModel.endDate)))

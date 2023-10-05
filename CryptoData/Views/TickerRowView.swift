@@ -15,11 +15,11 @@ struct TickerRowView: View {
         HStack {
             Text("\(Int(coin.marketCapRank ?? 1))").font(.caption).foregroundColor(.gray)
             KFImage(URL(string: coin.image))
-                .resizable().scaledToFit().frame(width: 33, height: 33)
+                .resizable().scaledToFit().frame(height: 38)
             VStack(alignment: .leading){
                 Text(coin.name).font(.subheadline)
                 Text(coin.symbol.uppercased()).font(.caption).fontWeight(.heavy)
-            }.padding(.leading, 7)
+            }.padding(.leading)
                 .foregroundColor(Color.theme.primaryTextColor)
             Spacer()
             VStack(alignment: .trailing){
@@ -33,8 +33,8 @@ struct TickerRowView: View {
     }
 }
 
-//struct TickerRowView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TickerRowView()
-//    }
-//}
+struct TickerRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        TickerRowView(coin: MockPreview().coin)
+    }
+}

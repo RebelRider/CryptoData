@@ -14,11 +14,11 @@ class ContentViewModel: ObservableObject {
     @Published var topMovingCoins = [Coin]()
     
     init() {
-        fetchCoinDate()
+        fetchCoinsData()
     }
     
-    func fetchCoinDate() {
-        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h&locale=en&precision=full"
+    func fetchCoinsData() {
+        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=131&page=1&sparkline=true&price_change_percentage=24h&locale=en&precision=full"
         
         guard let url = URL(string: urlString) else { return }
         
@@ -42,12 +42,14 @@ class ContentViewModel: ObservableObject {
                     self.configureTopMovers()
                     self.isLoadingData = false
                 }
-                
-                //print("DEBUG: \(coins)")
             }
             catch let error  { //errors of decoding process
                 print("DEBUG: error \(error)")
-                self.isLoadingData = false
+                self.isLoadingData = true
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+                    self.fetchCoinsData()
+                }
             }
             
         }.resume()
@@ -55,7 +57,7 @@ class ContentViewModel: ObservableObject {
     
     func configureTopMovers() {
         let topMovers = coins.sorted(by: { $0.priceChangePercentage24H > $1.priceChangePercentage24H })
-        self.topMovingCoins = Array(topMovers.prefix(7))
+        self.topMovingCoins = Array(topMovers.prefix(8))
     }
     
 }
